@@ -1,0 +1,115 @@
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: #ffffff52;
+  border-radius: 20px;
+}
+
+.author {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.author a {
+  color: midnightblue;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wheel-stand-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.wheel-stand-container img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.wheel-container {
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
+  text-align: center;
+}
+
+.wheel-container img {
+  width: 50%;
+  margin: 0 auto;
+  animation: wheel_rotate 40s infinite linear;
+}
+
+@keyframes wheel_rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wheel-joint-container {
+  position: absolute;
+  bottom: 220px;
+  width: 100%;
+  text-align: center;
+}
+
+.wheel-joint-container img {
+  width: 10%;
+}
+
+.wheel-seat-container {
+  position: absolute;
+  top: 38%;
+  text-align: center;
+  width: 100%;
+}
+
+.wheel-seat-container img {
+  width: 10%;
+  margin: 0 auto;
+}
+
+.seat-1 {
+  animation: wheel_seat_rotate 40s infinite linear;
+  animation-delay: -4.8s;
+}
+
+.seat-2 {
+  animation: wheel_seat_rotate 40s infinite linear;
+  animation-delay: -13.9s;
+}
+
+.seat-3 {
+  animation: wheel_seat_rotate 40s infinite linear;
+  animation-delay: -24s;
+}
+
+.seat-4 {
+  animation: wheel_seat_rotate 40s infinite linear;
+  animation-delay: -35s;
+}
+
+@keyframes wheel_seat_rotate {
+  0% {
+    transform: rotate(0) translateX(100px) rotate(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}

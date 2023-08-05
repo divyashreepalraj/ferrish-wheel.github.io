@@ -20,12 +20,12 @@ body {
   margin: 15px 0px;
 }
 
-.author a {
+.author p {
   color: midnightblue;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
+  margin: 0px;
 }
 
 .wheel-stand-container {
